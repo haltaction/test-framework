@@ -12,13 +12,4 @@ class IndexTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('Hello Vova', $content);
     }
-
-    public function testGoodbye()
-    {
-        ob_start();
-        include 'bye.php';
-        $content = ob_get_clean();
-
-        $this->assertEquals('Goodbye!', $content);
-    }
 }
